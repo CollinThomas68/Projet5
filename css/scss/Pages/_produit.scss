@@ -1,0 +1,29 @@
+
+
+.card{
+    @include box-shadow;
+    margin-bottom:50px;
+  }
+  
+  .card-body{
+    background-color:$colour-primary;
+  }
+  
+  
+  .flex{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+  }
+  
+  .affichageProduit{
+    padding-left:10px;
+    padding-right:10px;
+  }
+  .detail{
+    width:100%;
+  }
+  /*
+  .card-img-top{
+    width:100%;
+  }*/

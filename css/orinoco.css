@@ -1,0 +1,190 @@
+body {
+  background: white;
+  width: 100%;
+  margin: 0 !important;
+}
+
+.container {
+  margin-top: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.row {
+  margin: 0px !important;
+}
+
+a {
+  color: #261624 !important;
+}
+
+nav {
+  margin: 0px !important;
+  max-width: 100% !important;
+}
+
+article {
+  border: 2px solid black;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  box-shadow: 10px 5px 5px black;
+  background-color: #f3e9f1;
+}
+
+.imageListing {
+  width: 225px;
+}
+@media all and (min-width: 400px) {
+  .imageListing {
+    width: 350px;
+  }
+}
+@media all and (min-width: 576px) {
+  .imageListing {
+    width: 250px;
+  }
+}
+@media all and (min-width: 768px) {
+  .imageListing {
+    width: 313px;
+  }
+}
+@media all and (min-width: 992px) {
+  .imageListing {
+    width: 433px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .imageListing {
+    width: 523px;
+  }
+}
+
+h2, h5 {
+  font-family: "cfcrayons-regular", sans-serif;
+}
+
+.col-sm-12 {
+  text-align: center;
+}
+
+.col-sm-1 {
+  padding: 0px !important;
+}
+
+@font-face {
+  font-family: "cfcrayons-regular";
+  src: url("../Font/cfcrayons-regular-webfont.eot");
+  src: url("../Font/cfcrayons-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../Font/cfcrayons-regular-webfont.woff") format("woff"), url("../Font/cfcrayons-regular-webfont.ttf") format("truetype"), url("../Font/cfcrayons-regular-webfont.svg#cfcrayons-regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  height: 150px;
+  background-color: #f3e9f1;
+  color: #261624;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  top: 0px;
+  width: 100%;
+}
+
+.logo {
+  width: 225px;
+}
+@media all and (min-width: 768px) {
+  .logo {
+    width: 300px;
+  }
+}
+
+nav {
+  background-color: #f3e9f1;
+  padding-bottom: 20px;
+}
+
+.btnPanier, .btnviderPanier {
+  width: 125px;
+  height: 85px;
+}
+
+.qtePanier {
+  position: relative;
+  background-color: #f3e9f1;
+  border-radius: 45px;
+  border: 2px solid #935df3;
+  margin-top: -35px;
+  margin-left: 42px;
+  width: 25px;
+  height: 25px;
+}
+
+footer {
+  margin-top: 25px;
+  padding-top: 20px;
+  color: #261624;
+  background-color: #f3e9f1;
+  height: 100px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.boutonMoins, .boutonPlus {
+  width: 100%;
+  border: 2px solid black;
+  height: 50px;
+  margin-bottom: 15px;
+}
+@media all and (min-width: 768px) {
+  .boutonMoins, .boutonPlus {
+    height: 50%;
+    margin-bottom: 0px;
+  }
+}
+
+#inputContact {
+  margin-top: 20px;
+}
+
+.espace {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.card {
+  box-shadow: 10px 5px 5px black;
+  margin-bottom: 50px;
+}
+
+.card-body {
+  background-color: #f3e9f1;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.affichageProduit {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.detail {
+  width: 100%;
+}
+
+/*
+.card-img-top{
+  width:100%;
+}*/
+
+/*# sourceMappingURL=orinoco.css.map */

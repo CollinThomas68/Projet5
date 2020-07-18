@@ -1,0 +1,19 @@
+header {
+    height: 150px;
+    background-color:$colour-primary;
+    color: $colour-secondary;
+    display: flex!important;
+    flex-direction: column!important;
+    justify-content: center!important;
+    align-items: center!important;
+    top: 0px;
+    width: 100%;
+  }
+  
+.logo {
+    width:225px;
+    @include mediumSize{
+      width:300px;
+    }
+  }
+  
