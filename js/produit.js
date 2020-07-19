@@ -1,3 +1,4 @@
+var teddyElt = document.getElementById("teddy");
 // Fonction permettant de récupérer l'id indiqué dans la barre d'adresse
 function $_GET(param) {
 	var vars = {};
