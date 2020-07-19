@@ -34,6 +34,11 @@ article {
   background-color: #f3e9f1;
 }
 
+.accueil {
+  display: flex;
+  justify-content: center;
+}
+
 .imageListing {
   width: 225px;
 }
@@ -63,7 +68,7 @@ article {
   }
 }
 
-h2, h5 {
+h2, h3, h5 {
   font-family: "cfcrayons-regular", sans-serif;
 }
 

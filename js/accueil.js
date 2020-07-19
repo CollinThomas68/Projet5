@@ -1,4 +1,4 @@
-var teddiesElt = document.getElementById("teddies");
+
 //affichage du panier en haut de page avec la quantité d'articles s'y trouvant
 affichageNav();
 
@@ -11,7 +11,7 @@ ajaxGet("http://localhost:3000/api/teddies", function (reponse) {
             var teddy=teddies[i];
             let selectionProduits='<article>'+
                                     '<a href="produit.html?id=' + teddy._id+'" class="row">'+
-                                        '<div class="col-sm-6">'+
+                                        '<div class="col-sm-6 accueil">'+
                                             '<img src="'+teddy.imageUrl+'" class="imageListing" alt="Image '+teddy.name+'">'+
                                         '</div>'+
                                         '<div class="col-sm-6">'+

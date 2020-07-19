@@ -36,8 +36,12 @@ article{
     @include box-shadow;
     background-color:$colour-primary;
   }
-  
-  .imageListing{
+
+.accueil{
+  display:flex;
+  justify-content:center;
+}
+.imageListing{
     width:225px;
     @include miniSize{
       width:350px;
@@ -56,14 +60,14 @@ article{
       width:523px;
     }
   }
-  h2,h5{
+h2,h3,h5{
     font-family: "cfcrayons-regular", sans-serif;
   }
-  .col-sm-12{
+.col-sm-12{
 
     text-align:center;
   }
-  .col-sm-1{
+.col-sm-1{
     padding:0px!important;
   }
   

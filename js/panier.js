@@ -101,7 +101,7 @@
 
         let partieContact =
         '<article class="row">'+
-                    '<form name="formContact" id="idFormContact" onsubmit="return envoiCommande()" class="col-12">'+
+                    '<form name="formContact" onsubmit="return envoiCommande()" class="col-12">'+
                         '<div class="form-group row"><label class="col-12 col-sm-3">Nom*:</label><input type="text"  class="col-12 col-sm-9" name="nom" id="nom" pattern="^[A-Z\' ]+$" maxlenght="20" placeholder="Tout en MAJUSCULE !" required></div>'+
                         '<div class="form-group row"><label class="col-12 col-sm-3">Prénom*:</label><input type="text"  class="col-12 col-sm-9" name="prenom" id="prenom" pattern="^[A-ZÀÁÂÃÄÅÇÑñÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝ]{1}[a-zçàáâãäåçèéêëìíîïðòóôõöøùúûüýÿ]+$" maxlength="25" placeholder="1 majuscule au début..." required></div>'+
                         '<div class="form-group row"><label class="col-12 col-sm-3">Adresse*:</label><input type="text"  class="col-12 col-sm-9" name="adresse" id="adresse" placeholder="Votre adresse " maxlength="60" required></div>'+
@@ -110,10 +110,10 @@
                         '<div class="form-group row"><label class="col-12 col-sm-3">Email*:</label><input type="email"  class="col-12 col-sm-9" name="mail" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$" placeholder="Une adresse email !"required></div>'+
                         '<div id="inputContact" class="text-center">'+
 
-                            '<input type="submit" value="Valider la commande" id="bouton_envoi">'+
+                            '<input type="submit" value="Valider la commande">'+
                         '</div>'+
                     '</form>'+
-                    '<p id="important">* Champ obligatoire</p>'+
+                    '<p>* Tous les champs sont obligatoires!</p>'+
         '</article>';
     document.getElementById("contactClient").innerHTML = partieContact;
     }
