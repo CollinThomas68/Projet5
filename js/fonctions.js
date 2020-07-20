@@ -40,7 +40,7 @@ function calculPrixPanier(tableau){
 
 // Exécute un appel AJAX GET
 // Prend en paramètres l'URL cible et la fonction callback appelée en cas de succès/*
-function ajaxGet(url, callback) {
+/*function ajaxGet(url, callback) {
     var req = new XMLHttpRequest();
     req.open("GET", url);
     req.addEventListener("load", function () {
@@ -61,8 +61,33 @@ function ajaxGet(url, callback) {
     });
     req.send(null);
 }
+*/
 
-
+function ajaxGet(url) {
+    return new Promise(function (resolve, reject) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", url);
+        xhr.onload = function() {
+            if (this.status >= 200 && this.status < 300) {
+                resolve(xhr.response);
+            }
+            else {
+                reject({
+                    status: this.status,
+                    statusText: this.statusText
+                });
+            }
+        };
+        xhr.onerror = function () {
+            reject({
+                status: this.status,
+                statusText: this.statusText
+            });
+        };
+        xhr.open("GET", url);
+        xhr.send();
+    });
+}
 
 
 /*Fonction permettant d'ajouter un produit dans le panier depuis la fiche produit*/

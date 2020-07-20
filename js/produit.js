@@ -19,9 +19,10 @@ var id = $_GET('id');
 affichageNav();
 
 //Récup des données de l'API basée sur l'id du produit chois sur l'accueil
-ajaxGet(`http://localhost:3000/api/teddies/${id}`, function (reponse) {
+//ajaxGet(`http://localhost:3000/api/teddies/${id}`, function (reponse) {
+    ajaxGet(`http://localhost:3000/api/teddies/${id}`).then(function (response) {
     // Récupère le contenu en fonction de l'id de la page
-    var teddy = JSON.parse(reponse);
+    var teddy = JSON.parse(response);
     var teddyCouleurs= teddy.colors;
 
 
@@ -74,12 +75,19 @@ ajaxGet(`http://localhost:3000/api/teddies/${id}`, function (reponse) {
         let produitAffichage = document.getElementById('teddy');
         produitAffichage.innerHTML= produitChoisi;
     }
+})
+.catch(function (error) {
+    // On affiche le code de retour de la requête
+    console.log(error.status)
+    // Puis le texte du status
+    console.log(error.statusText)
+})
 
-
-});
-ajaxGet("http://localhost:3000/api/teddies", function (reponse) {
+//ajaxGet("http://localhost:3000/api/teddies", function (reponse) {
+    ajaxGet("http://localhost:3000/api/teddies").then(function (response) {
     // Transforme la réponse en un tableau d'articles
-    var teddies = JSON.parse(reponse);
+
+    var teddies = JSON.parse(response);
     
     console.log(teddies.length);
     console.log(teddies);
@@ -100,7 +108,11 @@ ajaxGet("http://localhost:3000/api/teddies", function (reponse) {
             let autresTeddies = document.getElementById('lesautres');
             autresTeddies.innerHTML+= autresProduits;
             }
-
-    }
-
-});
+        }
+    })
+    .catch(function (error) {
+        // On affiche le code de retour de la requête
+        console.log(error.status)
+        // Puis le texte du status
+        console.log(error.statusText)
+    })
