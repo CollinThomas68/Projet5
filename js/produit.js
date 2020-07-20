@@ -81,6 +81,11 @@ affichageNav();
     console.log(error.status)
     // Puis le texte du status
     console.log(error.statusText)
+    let erreur= '<article class="text-center">'+
+                    '<p>Cette référence n\'existe pas !</p>'+
+                '</article>';
+
+    teddyElt.innerHTML=erreur;
 })
 
 //ajaxGet("http://localhost:3000/api/teddies", function (reponse) {
